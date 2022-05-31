@@ -1,0 +1,53 @@
+    @import '../framework/_variables.scss',
+    '../framework/_mixins.scss',
+    '../framework/_colors.scss',
+    '../framework/_reset.scss';
+    // -----------------------  container --------------------------------------
+    .container {
+        margin-left: auto;
+        margin-right: auto;
+        padding-left: 15px;
+        padding-right: 15px;
+        max-width: 100%;
+        @include media(s) {
+            width: 750px;
+        }
+        @include media(md) {
+            width: 970px;
+        }
+        @include media(l) {
+            width: 1170px;
+        }
+        // --------------------- boxes ------------------------------------
+        //     .box {
+        //         @include media(m) {
+        //             // ($basis,  $one, $two, $three, $color, $alpha, $radius) 
+        //             @include box(100%, 0px, 0px, 10px, black, .2, 10px)
+        //         }
+        //         @include media(s) {
+        //             @include box(48%, 0px, 0px, 10px, black, .2, 10px)
+        //         }
+        //         @include media(md) {
+        //             @include box(31%, 0px, 0px, 10px, black, .2, 10px)
+        //         }
+        //         @include media(l) {
+        //             @include box(23%, 0px, 0px, 10px, black, .2, 10px)
+        //         }
+        //     }
+    }
+    
+    // // -------------------------------------- html -----------------------------------------
+    // html {
+    //     @include media(m) {
+    //         font-size: 10px;
+    //     }
+    //     @include media(s) {
+    //         font-size: 12px;
+    //     }
+    //     @include media(md) {
+    //         font-size: 14px;
+    //     }
+    //     @include media(l) {
+    //         font-size: 16px;
+    //     }
+    // }
